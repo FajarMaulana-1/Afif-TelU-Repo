@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Afif</title>
+    <style>
+      * {
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      }
+      body {
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        background: linear-gradient(-45deg, #1e293b, #0f172a, #334155, #1e3a8a);
+        background-size: 400% 400%;
+        animation: gradientBG 10s ease infinite;
+      }
+
+      @keyframes gradientBG {
+        0% {
+          background-position: 0% 50%;
+        }
+        50% {
+          background-position: 100% 50%;
+        }
+        100% {
+          background-position: 0% 50%;
+        }
+      }
+
+      .container {
+        display: flex;
+        width: 900px;
+        background-color: #1e1e1e;
+        border-radius: 10px;
+        overflow: hidden;
+        backdrop-filter: blur(10px);
+        animation: breathingGlow 2.5s infinite ease-in-out;
+      }
+
+      @keyframes breathingGlow {
+        0% {
+          box-shadow: 0 0 10px rgba(0, 110, 255, 0.4);
+        }
+        50% {
+          box-shadow: 0 0 20px rgba(0, 132, 255, 0.8);
+        }
+        100% {
+          box-shadow: 0 0 10px rgba(0, 183, 255, 0.4);
+        }
+      }
+
+      .form-container {
+        width: 50%;
+        padding: 30px;
+      }
+
+      h2 {
+        color: white;
+        margin: 0;
+        font-size: 22px;
+      }
+
+      .subtitle {
+        font-size: 14px;
+        color: #bbb;
+        margin: 10px 0 20px;
+      }
+
+      .input-group {
+        display: flex;
+        gap: 10px;
+        width: 100%;
+      }
+
+      .input-group input,
+      .full-width {
+        width: 100%;
+        padding: 12px;
+        border: 1px solid #444;
+        background-color: #222;
+        color: white;
+        border-radius: 5px;
+        margin-bottom: 10px;
+        box-sizing: border-box;
+      }
+
+      .phone-input {
+        display: flex;
+        gap: 10px;
+        align-items: center;
+      }
+
+      .phone-input span {
+        background: #333;
+        padding: 12px;
+        border-radius: 5px;
+      }
+
+      .phone-input input {
+        flex-grow: 1;
+        padding: 12px;
+        border: 1px solid #444;
+        background-color: #222;
+        color: white;
+        border-radius: 5px;
+      }
+
+      .label {
+        font-size: 14px;
+        margin-top: 10px;
+        margin-bottom: 5px;
+        display: block;
+        color: white;
+      }
+
+      .option-buttons {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        margin-top: 10px;
+      }
+
+      .option {
+        background-color: #222;
+        color: white;
+        padding: 12px;
+        border-radius: 5px;
+        border: none;
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        cursor: pointer;
+      }
+
+      .option:hover {
+        background-color: #333;
+      }
+
+      .option.active {
+        background-color: #007bff;
+      }
+
+      small {
+        color: #bbb;
+      }
+
+      .a-submit {
+        display: inline-block;
+        background-color: white;
+        color: black;
+        text-align: center;
+        text-decoration: none;
+        width: 100%;
+        border-radius: 5px;
+        font-weight: bold;
+        cursor: pointer;
+        margin-top: 15px;
+        padding: 12px;
+        border: none;
+      }
+
+      .a-submit:hover {
+        background-color: #ddd;
+      }
+
+      .form-container,
+      .image-container {
+        width: 50%;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+
+      .image-container {
+        position: relative;
+      }
+
+      .image-container img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        aspect-ratio: 1 / 1;
+        overflow: hidden;
+      }
+
+      .overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(
+          to bottom,
+          rgba(0, 0, 0, 0),
+          rgba(0, 0, 0, 1)
+        );
+      }
+
+      .image-text {
+        position: absolute;
+        bottom: 20px;
+        left: 20px;
+        right: 20px;
+        color: white;
+      }
+
+      .image-text strong {
+        display: block;
+        margin-top: 10px;
+      }
+
+      .image-text span {
+        font-size: 14px;
+        color: #bbb;
+      }
+
+      textarea {
+        padding: 12px;
+        width: 100%;
+        height: 100px;
+        resize: none;
+        border-radius: 6px;
+        border: 1px solid #444;
+        background-color: #1a1a1a;
+        color: #fff;
+        margin-top: 8px;
+      }
+
+      span {
+        color: white;
+      }
+    </style>
+  </head>
+  <body class="background">
+    <div class="container">
+      <div class="form-container">
+        <h2>Ayo Berdiskusi!</h2>
+        <p class="subtitle">
+          Anda memiliki proyek atau ingin berdiskusi tentang pengembangan
+          perangkat lunak dan teknologi? Jangan ragu untuk menghubungi saya
+          dengan mengisi formulir di bawah ini!
+        </p>
+
+        <form>
+          <div class="input-group">
+            <input type="text" placeholder="Nama depan" />
+            <input type="text" placeholder="Nama belakang" />
+          </div>
+          <input
+            type="text"
+            placeholder="Pekerjaan/Pendidikan"
+            class="full-width"
+          />
+          <input
+            type="email"
+            placeholder="Email Kerja/Pribadi"
+            class="full-width"
+          />
+
+          <div class="phone-input">
+            <span>🇮🇩 +62</span>
+            <input type="text" placeholder="810-0000-0000" />
+          </div>
+
+          <label class="label">Tinggalkan pesan</label>
+          <textarea
+            class="full-width"
+            placeholder="Saya ingin berdiskusi mengenai pengembangan website landing page untuk perusahaan saya..."
+            rows="4"
+          ></textarea>
+
+          <a href="CV FIX.html" class="a-submit">Kirim Pesan</a>
+        </form>
+      </div>
+
+      <div class="image-container">
+        <div class="overlay"></div>
+        <img src="Foto.jpg" alt="Background Image" />
+        <div class="image-text">
+          <p>
+            Saya seorang mahasiswa Sistem Informasi dengan keahlian dalam
+            pengembangan perangkat lunak, basis data, dan jaringan. Dengan
+            pengalaman sebagai Network Engineer Intern, saya terbiasa bekerja
+            dalam tim serta mencari solusi inovatif dalam menghadapi tantangan
+            teknis. Saya juga aktif dalam berbagai kompetisi teknologi dan media
+            kreatif, selalu siap untuk berkontribusi dan berkembang bersama tim
+            yang luar biasa!
+          </p>
+          <strong>Afif Nur Sena</strong>
+          <span>Mahasiswa Sistem Informasi & Pengembang Perangkat Lunak</span>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

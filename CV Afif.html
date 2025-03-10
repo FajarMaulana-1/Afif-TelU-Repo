@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <style>
+    h1 {
+      text-align: left;
+      margin-top: 0em;
+      margin-bottom: -0.8em;
+    }
+
+    h2 {
+      text-align: left;
+      margin-bottom: 0em;
+    }
+
+    h3 {
+      font-size: 18px;
+      margin-top: 1em;
+      margin-bottom: 0.1em;
+    }
+
+    h4 {
+      margin-top: -0.1em;
+      margin-bottom: 0em;
+      font-weight: normal;
+      font-size: 16px;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      text-align: justify;
+      font-size: 14px;
+      background-color: lightgray;
+    }
+
+    p {
+      margin-top: 0.1em;
+      margin-bottom: 0.1em;
+    }
+
+    .row {
+      display: flex;
+    }
+
+    .column-left {
+      width: 50%;
+    }
+
+    .column-right {
+      width: 50%;
+      margin-left: 5em;
+    }
+
+    .column-pic {
+      margin-right: 1em;
+    }
+
+    .content {
+      width: 210mm;
+      height: 297mm;
+      padding: 10mm;
+      box-sizing: border-box;
+      background-color: rgb(238, 235, 231);
+      border: 1px solid #ddd;
+      margin: auto;
+    }
+
+    .breathing-effect {
+      position: fixed;
+      bottom: -50px;
+      left: 0;
+      width: 100%;
+      height: 100px;
+      background: linear-gradient(to top, black, transparent);
+      animation: breathing 25s infinite ease-in-out;
+    }
+
+    @keyframes breathing {
+      0% {
+        height: 100px;
+        opacity: 0.8;
+      }
+
+      50% {
+        height: 120px;
+        opacity: 1;
+      }
+
+      100% {
+        height: 100px;
+        opacity: 0.8;
+      }
+    }
+
+    img {
+      width: 100px;
+      height: 100px;
+      object-fit: cover;
+      overflow: hidden;
+    }
+
+    ul {
+      margin-top: 0em;
+      margin-bottom: 0.1em;
+    }
+
+    hr {
+      margin-top: -0.2em;
+      border-top: 2px solid black;
+      color: grey;
+      background-color: grey;
+      border-color: rgb(183, 6, 6)
+    }
+
+    ul ul {
+      margin-left: -1em;
+    }
+
+    table {
+      border-color: black;
+    }
+
+    .a-button {
+      display: inline-block;
+      padding: 5px 9px;
+      background-color: rgb(183, 6, 6);
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 5px;
+      border: none;
+      text-align: center;
+      transition: background-color 0.3s ease-in-out;
+      margin-left: 512px;
+      margin-top: 17px;
+      margin-bottom: 5px;
+      font-size: 9pt;
+    }
+
+    .a-button:hover {
+      background-color: rgb(150, 5, 5);
+    }
+  </style>
+  <title>CV | Afif Nur Sena</title>
+</head>
+
+<body>
+  <div class="content">
+
+    <div class="row">
+      <div class="column-pic" width="100px" height="100px">
+        <img src="Foto.jpg" alt="" />
+      </div>
+      <div class="column">
+        <h1 class="align">AFIF NUR SENA</h1>
+        <h2>MAHASISWA SISTEM INFORMASI</h2>
+        <p>
+          <b>Jakarta, Indonesia</b> | <b>HP</b>: +6281533369512 | <b>Email</b>:
+          afifnursena08@gmail.com
+        </p>
+        <p>
+          <b>LinkedIn</b>: Afif Nur Sena | <b>Instagram</b>: afifnursena
+        </p>
+      </div>
+    </div>
+    <div style="display: flex;">
+      <h3>RINGKASAN</h3>
+      <a href="FORM FIX.html" class="a-button">Hubungi Saya</a>
+    </div>
+    <hr>
+
+    <p>
+      Mahasiswa Sistem Informasi Telkom University Jakarta dengan minat dalam teknologi,
+      pengembangan perangkat lunak, dan basis data. Memiliki pengalaman dalam pengembangan aplikasi
+      berbasis web dan desktop, serta pemrograman database menggunakan SQL dan Python.
+      Aktif dalam berbagai organisasi dan kompetisi, serta memiliki keterampilan dalam
+      networking, pemrograman, dan manajemen proyek. Berorientasi pada solusi, mampu bekerja dalam tim,
+      serta memiliki komunikasi yang baik dalam menjelaskan konsep teknis secara jelas dan detail.
+    </p>
+
+    <h3>PENDIDIKAN DAN PENGALAMAN</h3>
+    <hr>
+    <h4>
+      SMK Negeri 26 Jakarta |
+      <strong>Sistem Informatika, Jaringan, dan Aplikasi</strong> | 2019 -
+      2023
+    </h4>
+    <ul>
+      <li>Lulus Sertifikasi: </li>
+      <ul class="low-margin">
+        <li>CompTIA Network+, 2022.</li>
+        <li>LSP KKNI Level II Teknik Komputer dan Jaringan, 2022.</li>
+      </ul>
+      <li>Peserta Lulus Cybersecurity Training Sub Batch 1/2022 - InfraDigital Foundation.</li>
+      <li>Ketua & Programmer Tim "1 SMK Negeri 26 Jakarta" (13 Besar Tingkat Nasional dalam Game Padamin).</li>
+    </ul>
+    <h4>
+      Telkom University Jakarta |
+      <strong>S1 Sistem Informasi - IPK 3.94</strong> | 2023 - Sekarang
+    </h4>
+    <ul>
+      <li>Anggota Google Developer Groups On Campus Telkom University Jakarta.</li>
+      <li>Anggota Divisi Media Kreatif Language Club Telkom University Jakarta (Fotografi & Videografi).</li>
+      </li>
+      <li>Ketua Tim "National Business", Juara 1 Liga Mahasiswa Tel-U Jakarta 2024 (Film: Silence Doubts).</li>
+      <li>Ketua Tim "National Business", Juara 3 UNASFEST 2024 (Film: Charge The Sun).</li>
+      <li>Asisten Praktikum Mata Kuliah Algoritma dan Pemrograman (Predikat "Sangat Baik").</li>
+
+    </ul>
+    <h3>PENGALAMAN KERJA</h3>
+    <hr>
+    <h4>
+      <strong>Network Engineer Intern</strong> | PT. Nusantara Compnet Integrator | Mei 2022 - April 2023
+    </h4>
+    <ul>
+      <li>
+        Mendukung pemeliharaan & perbaikan infrastruktur jaringan klien seperti <strong>Pertamina EP, PT. Jaklingko
+          Indonesia, dan Kementerian.</strong>
+      </li>
+      <li>
+        Melakukan komunikasi langsung dengan klien untuk memahami kebutuhan dan menjelaskan solusi implementasi
+        jaringan.
+      </li>
+      <li>
+        Bekerja dalam <strong>tim segmented</strong> untuk <strong>mengimplementasikan solusi jaringan</strong> dan
+        mencegah <strong>miss-communication</strong> antar tim.
+      </li>
+      <li>
+        Melakukan <b>validasi</b> perangkat pelanggan, <b>memperbarui data</b> di sistem, serta <b>mengelola dan
+          mengarsipkan</b> dokumen penting.
+      </li>
+    </ul>
+    <h3>KEAHLIAN</h3>
+    <hr>
+    <br>
+    <table border="1" cellspacing="0" cellpadding="5" width="100%">
+      <tr>
+        <th colspan="2" align="center" style="color: white; background-color: rgb(183, 6, 6);">HARD SKILLS</th>
+        <th align="center" style="color: white; background-color: rgb(183, 6, 6);">SOFT SKILLS</th>
+      </tr>
+      <tr>
+        <td rowspan="2" width="20%">Database & Backend Development</td>
+        <td>Python, SQL - Aplikasi toko berbasis console dengan integrasi MySQL.</td>
+        <td>Teamwork & Leadership - Berkoordinasi dan bekerja efektif dalam tim.</td>
+      </tr>
+      <tr>
+        <td>Python, SQL, Flask, Bootstrap - Scheduler Telegram Bot.</td>
+        <td>Communication - Menyampaikan ide dan solusi dengan jelas.</td>
+      </tr>
+      <tr>
+        <td>Software Development</td>
+        <td>Java, JavaFX - Aplikasi toko berbasis GUI.</td>
+        <td rowspan="2">Problem Solving - Kemampuan memecahkan masalah secara analitis.</td>
+      </tr>
+      <tr>
+        <td>Game Development</td>
+        <td>C#, Unity - Game edukasi tentang pemadam kebakaran.</td>
+      </tr>
+    </table>
+
+  </div>
+  <div class="breathing-effect"></div>
+
+</body>
+
+</html>
